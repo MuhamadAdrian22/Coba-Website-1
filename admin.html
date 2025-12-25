@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin - Signature English</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <h1>Admin Dashboard</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <button onclick="logout()" class="btn-outline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section container">
+    <h2 class="section-title">Data Absensi Teacher</h2>
+    <table class="data-table" id="teacherTable">
+      <thead>
+        <tr>
+          <th>Nama Teacher</th>
+          <th>Tanggal</th>
+          <th>Jam Masuk</th>
+          <th>Jam Keluar</th>
+          <th>Durasi Mengajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- data dari script.js -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

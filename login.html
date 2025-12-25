@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Signature English</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+  <div class="login-container">
+    <h2>Login Portal</h2>
+    <p>Pilih peran Anda dan masukkan kredensial untuk melanjutkan</p>
+    <form id="loginForm">
+      <label>Peran:
+        <select id="role">
+          <option value="admin">Admin</option>
+          <option value="teacher">Teacher</option>
+        </select>
+      </label>
+      <label>Username:
+        <input type="text" id="username" required>
+      </label>
+      <label>Password:
+        <input type="password" id="password" required>
+      </label>
+      <button type="submit" class="btn-primary full">Masuk</button>
+      <p id="errorMsg" class="error"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

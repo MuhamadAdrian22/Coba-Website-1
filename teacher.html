@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard - Signature English</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <h1>Teacher Dashboard</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <button onclick="logout()" class="btn-outline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section container">
+    <h2 class="section-title">Absensi Mengajar</h2>
+    <form id="absensiForm" class="form-card">
+      <label>Nama Teacher:
+        <input type="text" id="teacherName" required>
+      </label>
+      <label>Tanggal:
+        <input type="date" id="date" required>
+      </label>
+      <label>Jam Masuk:
+        <input type="time" id="startTime" required>
+      </label>
+      <label>Jam Keluar:
+        <input type="time" id="endTime" required>
+      </label>
+      <button type="submit" class="btn-primary full">Simpan Absensi</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

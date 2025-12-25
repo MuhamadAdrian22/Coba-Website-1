@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.navbar {
+  background: #f7fbff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3b82f6;
+}
+
+.brand-text h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #0b1a3a;
+}
+
+.brand-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navlinks a:hover {
+  color: #3b82f6;
+}
+
+.btn-outline {
+  border: 1.5px solid #3b82f6;
+  background: transparent;
+  color: #3b82f6;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #dbeafe, #93c5fd);
+  padding: 80px 0;
+  text-align: center;
+  color: #0b1a3a;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cta-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: white;
+  border: 1.5px solid #3b82f6;
+  color: #3b82f6;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #0b1a3a;
+}
+
+/* PROGRAM */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f9fbff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  color: #0b1a3a;
+  margin-bottom: 8px;
+}
+
+/* ABOUT */
+.about-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.about-grid ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  text-align: left;
+}
+
+.form-card {
+  background: #f7fbff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.full {
+  width: 100%;
+}
+
+.contact-info h3 {
+  color: #0b1a3a;
+  margin-bottom: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background: #f7fbff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #e5e7eb;
+}
+/* LOGIN PAGE */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #dbeafe, #93c5fd);
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 10px;
+  color: #0b1a3a;
+}
+
+.login-container p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  text-align: left;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* TABLE */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.data-table th {
+  background: #f0f6ff;
+  color: #0b1a3a;
+}
